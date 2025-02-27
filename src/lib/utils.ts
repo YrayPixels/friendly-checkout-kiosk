@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-const API_URL = import.meta.env.VITE_ENV == "dev" ? "http://localhost:3001/api" : "http://localhost:3001/api"
+const API_URL = import.meta.env.VITE_ENV == "dev" ? "http://localhost:3001/api" : "https://instantpayservice.onrender.com/api"
 
 const getTokensInUsersWallet = async (publicKey: PublicKey, network: string, API_KEY: string) => {
   const tokens = await fetchTokenAccounts(publicKey, network, API_KEY)
