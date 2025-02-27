@@ -119,6 +119,7 @@ const Index = () => {
         description: "Your items will be delivered shortly.",
       });
     } catch (error) {
+      console.log(error)
       toast({
         title: "Payment failed",
         description: "Please try again.",
