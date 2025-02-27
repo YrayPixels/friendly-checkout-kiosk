@@ -10,7 +10,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { motion } from "framer-motion";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { getPreparedTransaction, getTokensInUsersWallet } from "@/lib/utils";
-
+import { Buffer } from "buffer";
 
 interface Item {
   id: number;
